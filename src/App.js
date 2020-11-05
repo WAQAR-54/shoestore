@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Header from './component/Header';
 import Product from './component/Product';
@@ -26,10 +26,26 @@ import About from './component/About';
           <Header></Header>
 
 
+          <Routes>
+     <Route path="/" element={<Home/>}/> 
+        <Route path="/product" element={<Product/>}>
+          <Route path="/" element={<Product />} />
+          <Route path=":productID" element={<Productdetails />} />
+        </Route>
+        <Route path="/Productdetail" element={<Productdetails/>}/> 
+        <Route path="/about" element={<About/>}/> 
+        <Route path="*" element={<Notfound/>}/> 
+        
+        
+    </Routes>
+
+
+
+
+
+{/* 
           <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+         
           <Route exact path="/product">
            <Product></Product>
            
@@ -37,7 +53,7 @@ import About from './component/About';
               
               <Product></Product>
 
-              </Route>
+             </Route>
               <Route exact path=":productID">
               
               <Productdetails></Productdetails>
@@ -56,7 +72,7 @@ import About from './component/About';
           <Route exact path="*">
            <Notfound></Notfound>
           </Route>
-          </Switch> 
+          </Switch>  */}
 
           <Footer></Footer>
 
