@@ -10,6 +10,8 @@ import Notfound from './component/notfound';
 import Footer from './component/Footer';
 import Productdetails from './component/Productdetails';
 import About from './component/About';
+import ProductIndex from './component/ProductIndex';
+
 
 // import Productdetails from './component/Productdetails';
 
@@ -28,8 +30,8 @@ import About from './component/About';
 
           <Routes>
      <Route path="/" element={<Home/>}/> 
-        <Route path="/product" element={<Product/>}>
-          <Route path="/" element={<Product />} />
+        <Route path="product" element={<Product/>}>
+          <Route path="/" element={<ProductIndex />} />
           <Route path=":productID" element={<Productdetails />} />
         </Route>
         <Route path="/Productdetail" element={<Productdetails/>}/> 
