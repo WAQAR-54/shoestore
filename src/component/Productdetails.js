@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router';
 
 
 
@@ -13,7 +14,9 @@ import React from 'react';
    <div>
 
        This My Page For Display Products 
+       <Outlet></Outlet>
    </div>
+
 
 
   );
