@@ -36,6 +36,9 @@ import ProductIndex from './component/ProductIndex';
         </Route>
         <Route path="/Productdetail" element={<Productdetails/>}/> 
         <Route path="/about" element={<About/>}/> 
+        
+        <Route path="/ProductIndex" element={<ProductIndex/>}/> 
+        
         <Route path="*" element={<Notfound/>}/> 
         
         
