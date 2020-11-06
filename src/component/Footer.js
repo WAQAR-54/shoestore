@@ -19,7 +19,7 @@ function Footer() {
     return (
         <Box className={classes.root}>
             <Typography className={classes.footer} variant="h6">
-                Made with Proffessor.
+                Made by Proffessor.
             </Typography>            
         </Box>
     )
