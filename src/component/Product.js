@@ -1,11 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-// import { routes } from 'react-router-dom';
-// import {Switch } from 'react-router-dom';
-// import {Outlet} from 'react-router-dom';
-// import Home from './Home';
-// import Productdetails from './Productdetails';
-// import Notfound from './notfound';
+// import { Outlet } from 'react-router-dom';
 
  function Product() {
 
@@ -16,7 +10,7 @@ import { Outlet } from 'react-router-dom';
      
       <h1>This is a Product Page </h1>
      
-     <Outlet/>
+  <Outlet/>
       
    </div>
 

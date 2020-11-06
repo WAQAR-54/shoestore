@@ -1,76 +1,68 @@
-import React from 'react'
-import { useParams } from "react-router-dom"
-import data from '../data/data';
-import { Link } from "react-router-dom"
-import { Container, Typography, CardMedia, Card } from "@material-ui/core"
-import { makeStyles } from '@material-ui/core/styles';
-// import product from './Product';
-import Product from './Product';
-function ProductDetail() {
+import React from 'react';
 
-    const useStyles = makeStyles({
-        root: {
-            margin: "10px",
+
+
+
+ function Productdetails() {
+
+
+  const  shoes = {
+        "AS-Cricket-Rubber-Sole-Running-Shoes-CHAMP": {
+            name: "AS Cricket Rubber Sole Running Shoes CHAMP",
+            img: "https://static-01.daraz.pk/p/mdc/a0f07cc825acb984633370ce371934bd.jpg",
+            price: "Rs. 2,200",
         },
-        card: {
-            width: "70%",
-            margin: "5px",
-            "&:hover": {
-                backgroundColor: "none",
-            },
+        "White-&-Orange-Cricket-Shoes-Rubber-Sole-MAX": {
+            name: "White & Orange Cricket Shoes - Rubber Sole - MAX",
+            img: "https://static-01.daraz.pk/p/86c47293415b46456693c6e3a440307b.jpg",
+            price: "Rs. 2,250",
         },
-        CardMedia: {
-            width: "100%",
-            height: "100%",
+        "Men-casual-shoes": {
+            name: "Men casual shoes",
+            img: "https://static-01.daraz.pk/p/2ccb6d541685dfc85e0ca04a0e5194c5.png",
+            price: "Rs. 599",
         },
-        title: {
-            color: "red",
-            fontFamily: "'Ubuntu', sans-serif",
-            fontWeight: "bold",
-            fontSize: "2rem",
-            textDecoration: "none",
-            "&:hover": {
-                textDecoration: "none",
-            }
+        "Super-High-Quality-For-Mens-Loafers": {
+            name: "Super High Quality For Mens Loafers",
+            img: "https://static-01.daraz.pk/p/b4f349ebde6b06e4c9fd3ae73f6caa31.jpg",
+            price: "Rs. 2,060",
         },
-        price: {
-            fontFamily: "'Ubuntu', sans-serif",
-            color: "red",
-            fontWeight: "bold"
+        "Stylish-Rubber-Shoes-For-Men": {
+            name: "Stylish Rubber Shoes For Men",
+            img: "https://static-01.daraz.pk/p/efd8cbab490c2793e658872a35019ecc.jpg",
+            price: "Rs. 2,300",
         },
-        "@media screen and (min-width: 0px) and (max-width: 600px)": {
-            CardMedia: {
-                width: "100%",
-                height: "100%",
-            }   
+        "TrendyBlackBreathableSports&Casual": {
+            name: "Trendy Black Breathable Sports & Casual Wear Joggers for Men",
+            img: "https://static-01.daraz.pk/p/6d310f4a197577e1d8870c3e1cf76ae0.jpg",
+            price: "Rs. 2,500",
+        },
+        "FormalOfficeLeatherShoesForMen's": {
+            name: "Formal Office Leather Shoes For Men's",
+            img: "https://static-01.daraz.pk/p/e02c79678fe916642ddf7790960f93d2.jpg",
+            price: "Rs. 3,200",
+        },
+        "NewStylishCasualJeansShoesforMenBlueColor": {
+            name: "New Stylish Casual Jeans Shoes for Men Blue Color",
+            img: "https://static-01.daraz.pk/p/86913e6176e6957fefeb8547edce19ab.jpg",
+            price: "Rs. 1,500",
+        },
+        "BeigeSuedeLeatherArmyBootsForMen": {
+            name: "Beige Suede Leather Army Boots For Men",
+            img: "https://static-01.daraz.pk/p/86913e6176e6957fefeb8547edce19ab.jpg",
+            price: "Rs. 4,200",
         }
-    });
-
-    const classes = useStyles()
-
-    const { slug } = useParams()
-    const shoe = data.shoes[slug]
-console.log( shoe )
-    if (!shoe) {
-        return (
-        <div className="productNotFount"><h1>Product Not Found</h1></div>
-        )
     }
-    const { name, img, price } = shoe
-    return (
-        <>
-            <Link to="/product">Back</Link>
-            <Container>
-                <Card>
-                    <Typography className={classes.title} variant="h4" component="h4">{name}</Typography>
-                    <CardMedia className={classes.CardMedia} component="img" alt={name} height="140" image={img} title={name} />
-                    <Typography className={classes.price} variant="h4" component="h4">{price}</Typography>
-                </Card>
-                <hr/>
-                <Product/>
-            </Container>
-        </>
-    )
-}
 
-export default ProductDetail
+  return (
+
+   <div>
+
+       
+   </div>
+
+
+  );
+ }
+
+export default Productdetails;
