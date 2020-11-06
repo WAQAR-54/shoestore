@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
  function Product() {
 
@@ -68,12 +68,17 @@ import { Outlet } from 'react-router-dom';
       <ul>
         {Object.entries(shoes).map(([productID,{name,img,price}])=>
           (
+
+
             <li  key={productID}>
-          <h2>{name}</h2>
-           <img src={img} alt={name}/>
 
-          <h3>Rs{price}</h3>
+        <Link to={productID}>
 
+                <h2>{name}</h2>
+                <img src={img} alt={name}/>
+                <h3>Rs{price}</h3>
+
+          </Link>
 
             </li>
          )
