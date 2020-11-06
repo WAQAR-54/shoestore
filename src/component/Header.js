@@ -59,6 +59,7 @@ function Header() {
                         <Link to="/productdetail" className={classes.navLink} >Products Detail</Link>{"            "}
                        
                         <Link to="/about" className={classes.navLink} >About</Link>
+                        <Link to="/Product" className={classes.navLink} >Product </Link>
                     </Typography>
                     
                     <ShoppingCartIcon className={classes.navIcon} />
