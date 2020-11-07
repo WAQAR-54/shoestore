@@ -56,10 +56,10 @@ function Header() {
                     <Typography>
                         <Link to="/" className={classes.navLink} >Home</Link>{"            "}
                         <Link to="/product" className={classes.navLink} >Products</Link>{"            "}
-                        <Link to="/productdetail" className={classes.navLink} >Products Detail</Link>{"            "}
+                        {/* <Link to="/productdetail" className={classes.navLink} >Products Detail</Link>{"            "} */}
                        
                         <Link to="/about" className={classes.navLink} >About</Link>
-                        <Link to="/Product" className={classes.navLink} >Product </Link>
+                        {/* <Link to="/Product" className={classes.navLink} >Product </Link> */}
                     </Typography>
                     
                     <ShoppingCartIcon className={classes.navIcon} />

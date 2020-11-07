@@ -62,9 +62,8 @@ import { Link} from 'react-router-dom';
     
     <div  className="App">
      
-      <h1>This is a Product Page </h1>
     
-      
+       
       <ul>
         {Object.entries(shoes).map(([productID,{name,img,price}])=>
           (
@@ -76,7 +75,7 @@ import { Link} from 'react-router-dom';
 
                 <h2>{name}</h2>
                 <img src={img} alt={name}/>
-                <h3>Rs{price}</h3>
+                <h3>{price}</h3>
 
           </Link>
 
