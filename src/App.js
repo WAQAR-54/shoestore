@@ -11,7 +11,8 @@ import Footer from './component/Footer';
 import Productdetails from './component/Productdetails';
 import About from './component/About';
 import ProductIndex from './component/ProductIndex';
-
+import youtube from './component/Youtube';
+import Youtube from './component/Youtube';
 
 // import Productdetails from './component/Productdetails';
 
@@ -35,7 +36,9 @@ import ProductIndex from './component/ProductIndex';
           <Route path=":productID" element={<Productdetails />} />
         </Route>
         {/* <Route path="/Productdetail" element={<Productdetails/>}/>  */}
-        <Route path="/about" element={<About/>}/> 
+        <Route path="/about" element={<About/>}/>
+
+          <Route path="/Youtube" element={<Youtube/>}/> 
         
         {/* <Route path="/ProductIndex" element={<ProductIndex/>}/>  */}
         
