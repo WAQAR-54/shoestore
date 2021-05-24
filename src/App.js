@@ -13,7 +13,7 @@ import About from './component/About';
 import ProductIndex from './component/ProductIndex';
 // import youtube from './component/Youtube';
 import Youtube from './component/Youtube';
-
+import yt from  './youtube2';
 // import Productdetails from './component/Productdetails';
 
 
@@ -27,7 +27,7 @@ import Youtube from './component/Youtube';
     <div >
        <BrowserRouter>
           <Header></Header>
-
+          <yt></yt>
 
           <Routes>
      <Route path="/" element={<Home/>}/> 
