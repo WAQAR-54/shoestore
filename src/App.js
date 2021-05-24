@@ -11,7 +11,7 @@ import Footer from './component/Footer';
 import Productdetails from './component/Productdetails';
 import About from './component/About';
 import ProductIndex from './component/ProductIndex';
-import youtube from './component/Youtube';
+// import youtube from './component/Youtube';
 import Youtube from './component/Youtube';
 
 // import Productdetails from './component/Productdetails';
